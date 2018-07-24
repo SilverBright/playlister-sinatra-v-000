@@ -8,7 +8,7 @@ class Artist < ActiveRecord::Base
   end
 
 
-  has_many :songs
-  has_many :genres
+  # has_many :songs
+  # has_many :genres
 
 end
