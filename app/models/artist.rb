@@ -11,5 +11,6 @@ class Artist < ActiveRecord::Base
     Artist.all.find do |artist|
       artist.slug == slug
     end
+  end
 
 end
