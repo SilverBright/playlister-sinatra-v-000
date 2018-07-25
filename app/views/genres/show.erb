@@ -1,4 +1,4 @@
-<h1>Genre Page</h1>
+<h1>Show Genres</h1>
 <h3>Genre Name: <%=@genre.name%></h3>
 <%@genre.artists.each do |artist|%>
 <h3>Genre Artists: <a href="/artists/<%=artist.slug%>"> <%= artist.name%></h3></a>
