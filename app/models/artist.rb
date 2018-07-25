@@ -1,4 +1,10 @@
 class Artist < ActiveRecord::Base
+
+  has_many :songs
+  has_many :genres, through: 'songs'
+
+end
+
 #   attr_accessor :name, :song, :genre
 #
 #   ARTIST = []
@@ -15,9 +21,3 @@ class Artist < ActiveRecord::Base
 #   end
 #
 # end
-
-
-  has_many :songs
-  has_many :genres, through: 'songs'
-
-end
