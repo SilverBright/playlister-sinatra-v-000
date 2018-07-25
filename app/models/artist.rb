@@ -7,7 +7,14 @@ class Artist < ActiveRecord::Base
     @name = params[:name]
     @song = params[:song]
     @genre = params[:genre]
+    ARTIST << self
   end
+
+  def self.all
+    ARTISTS
+  end
+
+
 
 
   # has_many :songs
