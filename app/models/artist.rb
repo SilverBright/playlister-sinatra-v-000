@@ -14,10 +14,8 @@ class Artist < ActiveRecord::Base
     ARTISTS
   end
 
-
+end
 
 
   # has_many :songs
   # has_many :genres
-
-end
