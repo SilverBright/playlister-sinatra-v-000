@@ -44,4 +44,10 @@ class SongsController < ApplicationController
     redirect "/songs/#{@song.slug}"
   end
 
+  get '/songs/:slug/edit' do
+    slug = params[:slug]
+    @song = Song.find_by_slug(slug)
+    erb :"songs/edit"
+  end
+
 end
